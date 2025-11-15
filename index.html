@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Huerta</title>
-<link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huerta Inteligente</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+
 <header>
-<h1>HUERTA INTELIGENTE</h1>
+    <h1>HUERTA INTELIGENTE</h1>
+    <br>
 </header>
 
+<main class="contenedor">
+    <section class="caja">
+        <h2>Temperatura</h2>
+        <p id="tempValue">-- °C</p>
+        <div id="tempStatus" class="status"></div>
+    </section>
 
-<main>
-<section class="sensor">
-<h2>Temperatura</h2>
-<p id="tempValue">-- °C</p>
-<div id="tempStatus" class="status"></div>
-</section>
+    <section class="caja">
+        <h2>Humedad Ambiental</h2>
+        <p id="humedadValue">-- %</p>
+        <div id="humedadStatus" class="status"></div>
+    </section>
 
-
-<section class="sensor">
-<h2>Humedad Ambiental</h2>
-<p id="humedadValue">-- %</p>
-<div id="humedadStatus" class="status"></div>
-</section>
-
-
-<section class="sensor">
-<h2>Humedad del Suelo</h2>
-<p id="sueloValue">-- %</p>
-<div id="sueloStatus" class="status"></div>
-</section>
+    <section class="caja">
+        <h2>Humedad del Suelo</h2>
+        <p id="sueloValue">-- %</p>
+        <div id="sueloStatus" class="status"></div>
+    </section>
 </main>
-
-<button> <a href="index2.html">Volver</a> </button>
+<br><br>
+<div class="boton-volver">
+    <a href="index2.html">Volver</a>
+</div>
 
 <script type="module" src="java.js"></script>
 </body>
